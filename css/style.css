@@ -31,7 +31,7 @@ aside {
 }
 
 img {
-  max-width: 50%;
+  max-width: 70%;
   position: relative;
   border-radius: 50%;
   filter: drop-shadow(0.4rem 0.2rem 0.6rem var(--dark));
@@ -91,3 +91,42 @@ main > section {
   list-style: none;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  body {
+    flex-wrap: wrap;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 100%;
+  }
+
+  img {
+    max-width: 20%;
+    position: relative;
+    border-radius: 50%;
+    filter: drop-shadow(0.4rem 0.2rem 0.6rem var(--dark));
+    animation: move 2s linear infinite alternate;
+  }
+
+  .socials {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .fa-brands {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  aside {
+    align-items: center;
+  }
+
+  .contact {
+    display: none;
+  }
