@@ -22,12 +22,56 @@ body {
 aside {
   gap: 1rem;
   max-width: 40%;
+  padding: 1rem;
   display: inherit;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: var(--gray);
   box-shadow: 0.3rem 0 0.5rem;
+}
+
+#open-dialog {
+  border: none;
+  font-size: 2rem; 
+  box-shadow: none;
+  background: transparent;
+}
+
+dialog {
+  top: 20%;
+  height: 50%;
+  width: 80%;
+  border: none;
+  padding: 2rem;
+  margin: 0 auto;
+  display: hidden;
+  border-radius: .5rem;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.dialog-header {
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.fa-brands {
+  display: block;
+  font-size: 2rem;
 }
 
 img {
@@ -47,15 +91,10 @@ img {
   }
 }
 
-.fa-brands {
-  margin: 0.5rem;
-  font-size: 2rem;
-}
-
 main {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 main > section {
@@ -92,6 +131,12 @@ main > section {
   justify-content: center;
 }
 
+@media (max-width: 1298px) {
+  body{
+    height: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     flex-wrap: wrap;
@@ -102,6 +147,7 @@ main > section {
     flex-direction: row;
     align-items: center;
     min-width: 100%;
+    
   }
 
   img {
@@ -109,7 +155,7 @@ main > section {
     position: relative;
     border-radius: 50%;
     filter: drop-shadow(0.4rem 0.2rem 0.6rem var(--dark));
-    animation: move 2s linear infinite alternate;
+    animation: none;
   }
 
   .socials {
