@@ -54,10 +54,8 @@ img {
 
 main {
   display: grid;
-  padding: 1rem;
-  width: 100%;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 main > section {
@@ -77,7 +75,7 @@ main > section {
 .section-card {
   display: inherit;
   flex-direction: column;
-  opacity: 1;
+  height: 90%;
 }
 
 .card {
