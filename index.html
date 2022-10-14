@@ -21,27 +21,28 @@
     <aside>
         <img src="./img/profile.png" alt="personal image">
         <h1>Vasco Marques</h1>
-        <h2>Curriculum Vitae</h2>
         <button id="open-dialog"><i class="fa-solid fa-envelope"></i></button>
         <dialog class="contact" id="dialog">
+            <span>
+                <button id="close-dialog"><i class="fa-solid fa-xmark"></i></button>
+            </span>
             <div>
                 <h1 class="dialog-header">Contact Details</h1>
                 <section>
-                    <p>location <i class="fa-solid fa-location-dot"></i> Lisbon, Portugal</p>
-                    <p>email <i class="fa-solid fa-at"></i> marques_vasco@yahoo.es</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Lisbon, Portugal</p>
+                    <p><i class="fa-solid fa-at"></i> marques_vasco@yahoo.es</p>
                 </section>
-                <section class="socials">
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
+                <section class="dialog-socials">
+                    <a href="https://www.linkedin.com/in/vascodmarques/" target="_blank"><i
+                            class="fa-brands fa-linkedin" target="_blank"></i></a>
+                    <a href="https://github.com/tabascum" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </section>
-                <span>
-                    <button id="close-dialog">close</button>
-                </span>
             </div>
         </dialog>
+        <!--  <button id="switch"><i class="fa-solid fa-circle-dot"></i></button> -->
     </aside>
     <!-- Right side content information -->
-    <main>
+    <main class="light-theme">
         <!-- Education card -->
         <section class="section-card">
             <h1>Education</h1>
@@ -56,9 +57,9 @@
         <section class="section-card">
             <h1>Programming Courses</h1>
             <article>
-                <h3 class="header">Fullstack JavaScript Course</h3>
+                <h3 class="header">Fullstack JavaScript</h3>
                 <p></i><a href="https://programador.onebitcode.com/">OneBitCode</a>, e-learning</p>
-                <p>August - 2022</p>
+                <p>August - ongoing 2022</p>
             </article>
             <article>
                 <h3 class="header">Web Development</h3>
@@ -74,26 +75,36 @@
             <section>
                 <article class="card">
                     <h3>Landing Page</h3>
-                    <a href="">Live preview</a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <div class="card-links">
+                        <a href="https://tabascum.github.io/parallax-effects/" target="_blank"><i
+                                class="fa-solid fa-eye"></i></a>
+                        <a href="https://github.com/tabascum/parallax-effects" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
                 </article>
                 <article class="card">
                     <h3>Calculator</h3>
-                    <a href="">Live preview</a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <div class="card-links">
+                        <a href="https://tabascum.github.io/calculator/" target="_blank"><i
+                                class="fa-solid fa-eye"></i></a>
+                        <a href="https://github.com/tabascum/calculator" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
                 </article>
                 <article class="card">
                     <h3>Game</h3>
-                    <a href="">Live preview</a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <div class="card-links">
+                        <a href="https://tabascum.github.io/avoid-the-bush-game/" target="_blank"><i
+                                class="fa-solid fa-eye" target="_blank"></i></a>
+                        <a href="https://github.com/tabascum/avoid-the-bush-game" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
                 </article>
                 <article>
-                    <ul class="list">
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><i class="fa-brands fa-sass"></i></li>
-                        <li><i class="fa-brands fa-js"></i></li>
-                        <li><i class="fa-brands fa-node-js"></i></li>
+                    <ul class="list direction">
+                        <li class="list-brands"><i class="fa-brands fa-html5"></i></li>
+                        <li class="list-brands"><i class="fa-brands fa-css3-alt"></i></li>
+                        <li class="list-brands"><i class="fa-brands fa-js"></i></li>
                     </ul>
                 </article>
             </section>
@@ -103,7 +114,7 @@
             <h1>Skills</h1>
             <article>
                 <h1 class="header">Personal Skills</h1>
-                <ul>
+                <ul class="list">
                     <li>Comunication</li>
                     <li>Resilience</li>
                     <li>Hability to work under pressure</li>
@@ -113,8 +124,8 @@
                 </ul>
             </article>
             <article>
-                <h1 class="header">Languages</h1>
-                <ul class="list">
+                <h1>Languages</h1>
+                <ul class="list direction">
                     <li>Portuguese</li>
                     <li>French</li>
                     <li>English</li>
@@ -135,6 +146,7 @@
             </article>
         </section>
     </main>
+
     <!-- Custom JS -->
     <script src="index.js"></script>
 </body>
